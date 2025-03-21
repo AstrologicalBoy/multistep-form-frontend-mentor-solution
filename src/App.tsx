@@ -40,10 +40,10 @@ const App = () => {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.1 }}
-          className="relative h-dvh md:h-[555px] md:w-[700px] lg:w-[800px] bg-magnolia md:bg-white md:rounded-2xl md:p-4 md:flex md:gap-4 md:shadow-md"
+          className="relative h-screen md:h-[555px] md:w-[700px] lg:w-[800px] bg-magnolia md:bg-white md:rounded-2xl md:p-4 md:flex md:gap-4 md:shadow-md"
         >
           <SectionPointer />
-          <div className="h-dvh md:h-auto w-5/6 mx-auto md:flex md:flex-col md:justify-between md:py-10 md:px-16 text-coolGray">
+          <div className="h-screen md:h-auto w-5/6 mx-auto md:flex md:flex-col md:justify-between md:py-10 md:px-16 text-coolGray">
             {formData.stage === 1 &&
               <Suspense fallback={<Loading />}>
                 <SectionOne />
